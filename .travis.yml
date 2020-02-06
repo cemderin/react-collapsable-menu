@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 10
+before_deploy: yarn build
+deploy:
+  edge: true
+  provider: npm
+  skip_cleanup: true
+  email: cemyderin@gmail.com
+  api_key:
+    secure: Io5e/Chwdc9jgKd5bE9ePlofAudg+brPjmXtG3UABrzdul5hPouRL7SxEPWfcTnbiCovYE69P1GIErW27UnCKs5lHKBJfpSU7MjuZZquWbh+GTOhzFxSXNyo4dSsQJ5NUicBYV7XRU3TIkxSUaOv6mCZeeg7x/OM099MQimbjUc8ddzsStjGjiBA9Y+e/zAujzTxhVXWWkrBGJJT7zkFAiSy19JUoysgcbjb7dEUYHLovhJujpAOot6OCfc06nCCjw8Cluq57j4h19pnWcczx1TJvZdnIxHOMJHIrP1aoAU4AmSKr0irZ3wLMzEf7OWGJCHDAJ9nWCsdI4944zxj4ykCd+VjeVIsKC0jZM/Lld2hvsSFtfDM680PttFsn+6AEOXhltpg5HQ4T4YhCWtW9ivFxjYuBxvlDY6QBRi1fRP2w7rg346LQ4vw0iI2+8B6FUKC0ZR/uT8OjRqOPsY8vLXUOQygbF888oEXbj26YaaGg2vJ1b6ejNBOCEQBPnAx7zuZXyTjjeShWFwjS8UFQIrbixg4pgI9cH0MgkfP3F+Y/Ayl3YLXPTjue+OlUuOpnLty/Ih2ryAFR6AB/+EjvKlgSgqqKsqQ/WKdCfbl8kBChvb24g1kdWQBl5W1OciPaUh4aII9e0WDTUeBo5TXWM0Mu8sSb8wo4KLv7taBB9Q=
+  on:
+    repo: cemderin/react-collapsable-menu
+    branch: master
