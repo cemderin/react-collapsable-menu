@@ -50,5 +50,8 @@
   },
   "description": "Collapsable Menu Component",
   "repository": "https://cemderin@github.com/cemderin/react-collapsable-menu.git",
-  "private": false
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }
