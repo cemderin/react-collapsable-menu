@@ -12,7 +12,8 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "release": "npx standard-version"
   },
   "peerDependencies": {
     "react": ">=16"
