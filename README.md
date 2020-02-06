@@ -33,9 +33,11 @@ const Demo = () => {
 
 export default Demo;
 ```
+## Changelog
+Please see [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 MIT
 
 ## Develpoment
-Please see [development document](./DEVELOPMENT.md).
+Please see [DEVELOPMENT.md](./DEVELOPMENT.md).
