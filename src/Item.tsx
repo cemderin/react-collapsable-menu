@@ -9,7 +9,13 @@ const StyledLi = styled.li`
     text-decoration: ${(props:any) => props.active && !props.hideInactive ? "underline" : "none"};
 `
 
-const Item: React.FC = (props: any) => {
+type ItemProps = {
+    hideInactive?: boolean,
+    active?: boolean,
+    toggleVisiblity?: Function
+}
+
+const Item: React.FC<ItemProps> = (props: any) => {
     if(props.hideInactive && !props.active) return null;
     if(props.hideInactive && props.active) return <StyledLi {...props} onClick={props.toggleVisiblity}/>
     return <StyledLi {...props} />
