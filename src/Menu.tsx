@@ -8,7 +8,11 @@ const StyledUl = styled.ul`
     padding: inherit;
 `
 
-const Menu: React.FC = (props: any) => {
+type MenuProps = {
+    collapsed?: boolean
+};
+
+const Menu: React.FC<MenuProps> = (props: any) => {
     const [displayCollapesList, setDisplayCollapesList] = useState(false);
 
     const toggleVisibility = () => {
