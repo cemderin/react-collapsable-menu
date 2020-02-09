@@ -9,7 +9,8 @@ const StyledUl = styled.ul`
 `
 
 type MenuProps = {
-    collapsed?: boolean
+    collapsed?: boolean,
+    stacked?: boolean
 };
 
 const Menu: React.FC<MenuProps> = (props: any) => {
@@ -21,9 +22,9 @@ const Menu: React.FC<MenuProps> = (props: any) => {
 
     return <StyledMenu {...props}>
         <StyledUl>
-            {props.collapsed &&                         React.Children.map(props.children, (child: any) => React.cloneElement(child, { hideInactive: true, toggleVisiblity: toggleVisibility }))}
-            {props.collapsed && displayCollapesList &&  React.Children.map(props.children, (child: any) => React.cloneElement(child, {collapsed: props.collapsed}) )}
-            {!props.collapsed && props.children}
+            {props.collapsed &&                         React.Children.map(props.children, (child: any) => React.cloneElement(child, { stacked: props.stacked, hideInactive: true, toggleVisiblity: toggleVisibility }))}
+            {props.collapsed && displayCollapesList &&  React.Children.map(props.children, (child: any) => React.cloneElement(child, { stacked: props.stacked, collapsed: props.collapsed }) )}
+            {!props.collapsed &&                        React.Children.map(props.children, (child: any) => React.cloneElement(child, { stacked: props.stacked }))}
         </StyledUl>
     </StyledMenu>
 }
