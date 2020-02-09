@@ -2,11 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledLi = styled.li`
-    display:${(props:any) => props.collapsed ? "block" : "inline-block"};
+
+    display:${(props:any) => props.collapsed || props.stacked ? "block" : "inline-block"};
+
     margin: 0.125em;
     padding: 0.125em;
 
     text-decoration: ${(props:any) => props.active && !props.hideInactive ? "underline" : "none"};
+
+
 `
 
 type ItemProps = {

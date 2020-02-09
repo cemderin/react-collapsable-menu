@@ -14,7 +14,26 @@ const App = () => {
       </Menu>
 
       <hr />
+
       <Menu collapsed>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
+
+      <hr />
+
+      <Menu stacked>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
+
+      <hr />
+
+      <Menu stacked collapsed>
         <Item>Home</Item>
         <Item>About Us</Item>
         <Item active>Careers</Item>
