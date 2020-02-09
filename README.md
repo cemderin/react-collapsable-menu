@@ -20,14 +20,38 @@ import {Menu, Item} from '@cemderin/react-collapsable-menu';
 const Demo = () => {
   return <React.Fragment>
     <Menu>
-      <Item>Inactive</Item>
-      <Item active>Active</Item>
-    </Menu>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
 
-    <Menu collapsed>
-      <Item>Inactive</Item>
-      <Item active>Active</Item>
-    </Menu>
+      <hr />
+
+      <Menu collapsed>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
+
+      <hr />
+
+      <Menu stacked>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
+
+      <hr />
+
+      <Menu stacked collapsed>
+        <Item>Home</Item>
+        <Item>About Us</Item>
+        <Item active>Careers</Item>
+        <Item>Contact</Item>
+      </Menu>
   </React.Fragment>
 }
 
